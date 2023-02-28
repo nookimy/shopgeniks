@@ -1,0 +1,82 @@
+.registration {
+  width: @mobile-content-width-a;
+  margin: 0 auto 40px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-content-width-a;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__input {
+    width: 290px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cecece;
+
+    @media (min-width: @tablet-width) {
+      width: 390px;
+    }
+  }
+
+  &__input--captcha {
+    width: 130px;
+
+    @media (min-width: @tablet-width) {
+      width: 230px;
+    }
+  }
+
+  &__captcha {
+    width: 290px;
+
+    @media (min-width: @tablet-width) {
+      width: 390px;
+    }
+  }
+
+  &__captcha-text {
+    position: relative;
+  }
+
+  &__captcha-img {
+    width: 160px;
+    height: 80px;
+    float: left;
+  }
+
+  &__refresh-captcha {
+    position: absolute;
+    right: 0;
+    fill: @company-color2;
+    transition: @transition;
+  }
+
+  &__refresh-captcha:hover,
+  &__refresh-captcha:focus {
+    fill: @company-color2--pressing;
+  }
+
+  &__btn {
+    width: 290px;
+
+    @media (min-width: @tablet-width) {
+      width: 390px;
+    }
+  }
+}

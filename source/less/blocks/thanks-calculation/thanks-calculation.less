@@ -1,0 +1,48 @@
+.thanks-calculation {
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 8px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__term {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+    }
+  }
+
+  &__definition {
+    width: 55%;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 40%;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    color: @text-copyright;
+  }
+
+  &__text--bold {
+    color: @dark;
+    font-weight: 500;
+  }
+}

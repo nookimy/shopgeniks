@@ -1,0 +1,35 @@
+.bank-cards {
+  display: flex;
+  flex-wrap: wrap;
+  .list();
+
+  &__item {
+    box-sizing: border-box;
+    width: 36px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid @border-grey;
+    background-color: @light;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% auto;
+
+    @media (min-width: @tablet-width) {
+      width: 58px;
+      height: 40px;
+    }
+  }
+
+  &__item--visa {
+    background-image: url("../img/bank-cards/visa-card.svg");
+  }
+
+  &__item--mastercard {
+    background-image: url("../img/bank-cards/mastercard.svg");
+  }
+
+  &__item--mir {
+    background-image: url("../img/bank-cards/mir-card.svg");
+  }
+}

@@ -1,0 +1,45 @@
+
+<div class="product__main-content">
+  <h1 class="product__title page__heading3 page__title">«Ника-Супер» Средство концентрированное для мытья посуды 0,5 кг</h1>
+  <div class="card product__img-container">
+    <picture>
+      <source media="(min-width: 1170px)" srcset="./img/product/nika-sangel-460@3x.jpeg 3x,
+                                                ./img/product/nika-sangel-460@2x.jpeg 2x,
+                                                ./img/product/nika-sangel-460.jpeg">
+      <source media="(min-width: 750px)" srcset="./img/product/nika-sangel-290@3x.jpeg 3x,
+                                               ./img/product/nika-sangel-290@2x.jpeg 2x,
+                                               ./img/product/nika-sangel-290.jpeg">
+      <img class="product__img" src="./img/product/nika-sangel-290.jpeg"
+           srcset="./img/product/nika-sangel-290@3x.jpeg 3x,
+                                        ./img/product/nika-sangel-290@2x.jpeg 2x,
+                                        ./img/product/nika-sangel-290.jpeg"
+           alt="Ника-Сангель WC антибактериальный 5 кг">
+    </picture>
+  </div>
+  <section class="product-information product__information">
+    <h2 class="visually-hidden">Информация о товаре</h2>
+    <div class="product__rating">
+      <include src="source/less/blocks/rating/rating.html"></include>
+    </div>
+    <form class="product__form" action="#">
+      <p class="product-information__availability">Товар в наличии</p>
+      <ul class="prices product__prices">
+        <li class="prices__item prices__item--product-page">525 ₽</li>
+        <li class="prices__item prices__item--old prices__item--product-page-old">500 ₽</li>
+      </ul>
+      <div class="value product__form-value">
+        <button class="value__toggle value__toggle--plus" type="button">-</button>
+        <label for="number-of-goods"></label>
+        <input class="value__input" type="number" name="number-of-goods" id="number-of-goods" value="1">
+        <button class="value__toggle value__toggle--minus" type="button">+</button>
+      </div>
+      <div class="product__buy-buttons">
+        <button class="product__buy-button btn" type="submit">Добавить в корзину</button>
+        <a class="product__buy-button btn btn--empty" href="#">Быстрый заказ</a>
+      </div>
+    </form>
+  </section>
+</div>
+<div class="product-description product__description">
+  <include src="source/less/blocks/product-description/product-description.html"></include>
+</div>

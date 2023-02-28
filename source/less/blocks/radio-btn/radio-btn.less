@@ -1,0 +1,45 @@
+.radio-btn {
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 25px;
+  }
+
+  &__label::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid @dark;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: @transition;
+  }
+
+  &__label::after {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @company-color2;
+    opacity: 0;
+    transition: @transition;
+  }
+
+  &__input:checked + &__label::after {
+    opacity: 1;
+  }
+}

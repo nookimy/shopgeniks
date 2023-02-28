@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 44 48" enable-background="new 0 0 44 48" xml:space="preserve">
+<g>
+	<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" cx="37" cy="7" r="6"/>
+	<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" cx="34.5" cy="40.5" r="6.5"/>
+	<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" cx="7" cy="23" r="6"/>
+	<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" x1="34" y1="12" x2="30" y2="17"/>
+	<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" x1="32" y1="35" x2="29" y2="30"/>
+	<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" x1="13" y1="23" x2="18" y2="23"/>
+	<ellipse fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" cx="25.513" cy="23.513" rx="7.513" ry="7.487"/>
+	<path fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" d="M26.536,13.308
+		c-1.209-2.783-4.445-4.06-7.229-2.852s-4.06,4.445-2.851,7.228"/>
+	<path fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" d="M34.823,18.216c3.025,0.17,5.338,2.767,5.168,5.803
+		c-0.17,3.035-2.76,5.358-5.785,5.188"/>
+	<path fill="none" stroke="#3B3B3B" stroke-width="2" stroke-miterlimit="10" d="M26,34.121c-1.437,2.666-4.772,3.658-7.45,2.217
+		c-2.678-1.441-3.684-4.77-2.248-7.436"/>
+</g>
+</svg>

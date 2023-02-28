@@ -1,0 +1,51 @@
+.login {
+  padding: 30px 30px 20px;
+  text-align: center;
+  background-color: @light;
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin: 15px auto 20px;
+    background-color: @text-copyright;
+  }
+
+  &__input {
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #cecece;
+  }
+
+  &__checkbox {
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    width: 230px;
+    margin: 0 auto 15px;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 5px;
+    color: @company-color2;
+    text-decoration: none;
+  }
+
+  &__link:last-of-type {
+    margin-bottom: 15px;
+  }
+
+  &__error {
+    color: @error;
+    margin-bottom: 15px;
+  }
+}

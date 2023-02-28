@@ -1,0 +1,40 @@
+.mini-cart {
+  position: relative;
+  display: block;
+  min-width: 90px;
+  text-decoration: none;
+  color: @dark;
+
+  &__icon {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    fill: @company-color2;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 12px 0;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
+  }
+
+  &__text span {
+    @media (max-width: @desktop-width - 1) {
+      display: none;
+    }
+  }
+
+  &__count {
+    position: absolute;
+    border-radius: 5px;
+    background: #ee334f;
+    color: @light;
+    font-size: 12px;
+    top: 3px;
+    left: 14px;
+    padding: 2px 5px;
+  }
+}

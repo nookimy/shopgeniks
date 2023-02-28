@@ -1,0 +1,129 @@
+.catalog-menu {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: @bg-main;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+
+  &__close-btn {
+    display: none;
+    top: 13px;
+    right: 3px;
+    position: absolute;
+    .normal-font(12px; 1.3; 500);
+    text-transform: uppercase;
+    color: @border-grey;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
+  }
+
+  &__close-btn--opened {
+    display: block;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &__cross {
+    fill: @border-grey;
+
+    @media (min-width: @tablet-width) {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &__title {
+    width: @mobile-content-width-a;
+    margin: 0 auto 7px;
+    padding: 0;
+    color: @company-color2;
+    .normal-font(12px; 1.3; 500);
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: @tablet-content-width-a;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 17px;
+    }
+  }
+
+  &__title-icon {
+    margin-right: 5px;
+
+    @media (min-width: @tablet-width) {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    width: @mobile-content-width-a;
+    .list();
+    margin: 0 auto;
+    column-count: 2;
+
+    @media (min-width: @tablet-width) {
+      width: @tablet-content-width-a;
+      column-count: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      column-count: unset;
+    }
+  }
+
+  &__list--opened {
+    display: block;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 4px 7px;
+    color: @dark;
+    .normal-font(12px; 1.3; 500);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: @transition;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+      padding: 7px 25px;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: @company-color;
+  }
+
+  &__link--active,
+  &__link--active:hover,
+  &__link--active:focus {
+    color: @light;
+    background-color: @company-color2;
+  }
+}

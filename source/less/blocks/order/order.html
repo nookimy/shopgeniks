@@ -1,0 +1,108 @@
+
+<h1 class="order__title page__heading1 page__title">Оформление заказа</h1>
+<form class="order__form feedback" action="#">
+  <fieldset class="order__fieldset order__fieldset--calculation">
+    <legend class="order__subtitle order__subtitle--calculation order__subtitle--icon-order page__heading2">Ваш заказ</legend>
+    <div class="order__calculation-wrapper">
+      <dl class="order-calculation">
+        <div class="order-calculation__item">
+          <dt class="order-calculation__term">
+            <p class="order-calculation__text">Товары(10)</p>
+          </dt>
+          <dd class="order-calculation__definition">
+            <b class="order-calculation__text order-calculation__text--big">11250 ₽</b>
+          </dd>
+        </div>
+        <div class="order-calculation__item">
+          <dt class="order-calculation__term">
+            <p class="order-calculation__text order-calculation__text--company-color">Скидка по промокоду</p>
+          </dt>
+          <dd class="order-calculation__definition">
+            <b class="order-calculation__text order-calculation__text--big order-calculation__text--company-color">-155 ₽</b>
+          </dd>
+        </div>
+        <div class="order-calculation__item">
+          <dt class="order-calculation__term">
+            <p class="order-calculation__text order-calculation__text--big">К оплате</p>
+          </dt>
+          <dd class="order-calculation__definition">
+            <b class="order-calculation__text order-calculation__text--big">824,50 ₽</b>
+          </dd>
+        </div>
+      </dl>
+      <a class="order__change-btn btn" href="#edit">Изменить</a>
+    </div>
+  </fieldset>
+
+  <fieldset class="order__fieldset order__fieldset--delivery">
+    <legend class="order__subtitle page__heading2">Способы доставки</legend>
+    <ul class="order-delivery order__list card radio-btn">
+      <li class="order-delivery__item">
+        <input class="radio-btn__input" type="radio" name="delivery" id="delivery-transport-company" checked>
+        <label class="radio-btn__label" for="delivery-transport-company">
+          <b class="order-delivery__title page__heading3">Доставка транспортной компанией</b>
+          <span class="order-delivery__text">Для регионов России. Стоимость доставки Вы можете рассчитать на сайтах транспортных компаний <a class="page__link" href="#">dellin.ru</a>, <a class="page__link" href="#">baikalsr.ru</a></span>
+        </label>
+      </li>
+      <li class="order-delivery__item">
+        <input class="radio-btn__input" type="radio" name="delivery" id="delivery-courier">
+        <label class="radio-btn__label" for="delivery-courier">
+          <b class="order-delivery__title page__heading3">Доставка курьером до двери</b>
+          <span class="order-delivery__text">По городу Йошкар-Ола минимальная сумма заказа 500 руб., доставка бесплатно</span>
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="order__fieldset order__fieldset--contact">
+    <legend class="order__subtitle page__heading2">Контактные данные</legend>
+    <div class="order-contact order__list order__contact card">
+      <ul class="order-contact__list">
+        <li class="order-contact__item">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="feedback__input order-contact__input" type="text" name="" id="name" placeholder="Имя*">
+        </li>
+        <li class="order-contact__item">
+          <label class="visually-hidden" for="surname">Фамилия*</label>
+          <input class="feedback__input order-contact__input" type="text" name="" id="surname" placeholder="Фамилия*">
+        </li>
+        <li class="order-contact__item">
+          <label class="visually-hidden" for="tel">Телефон</label>
+          <input class="feedback__input order-contact__input" type="tel" name="" id="tel" placeholder="+7 ( _ _ _) _ _ _ - _ _ - _ _*">
+        </li>
+        <li class="order-contact__item">
+          <label class="visually-hidden" for="email">E-mail</label>
+          <input class="feedback__input order-contact__input" type="email" name="" id="email" placeholder="E-mail">
+        </li>
+      </ul>
+      <textarea class="order-contact__textarea" name="delivery-address" id="delivery-address" rows="5">Адрес доставки*</textarea>
+    </div>
+    <p class="page__footnote">* - Обязательные поля. E-mail используется для оповещений об изменениях статуса заказа.</p>
+  </fieldset>
+
+  <fieldset class="order__fieldset order__fieldset--method">
+    <legend class="order__subtitle page__heading2">Способ оплаты:</legend>
+    <ul class="order__payment-method order__list card radio-btn">
+      <li>
+        <input class="radio-btn__input" type="radio" name="payment-method" id="payment-card" checked>
+        <label class="radio-btn__label page__heading3" for="payment-card">Оплата картой Онлайн*</label>
+      </li>
+      <li>
+        <input class="radio-btn__input" type="radio" name="payment-method" id="payment-cash">
+        <label class="radio-btn__label page__heading3" for="payment-cash">Наличными при получении (ТОЛЬКО ДЛЯ МАРИЙ ЭЛ)</label>
+      </li>
+      <li>
+        <input class="radio-btn__input" type="radio" name="payment-method" id="card-receipt">
+        <label class="radio-btn__label page__heading3" for="card-receipt">Картой при получении (ТОЛЬКО ДЛЯ МАРИЙ ЭЛ)</label>
+      </li>
+    </ul>
+    <p class="page__footnote">* - Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard Secure Code для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa In t. и MasterCard Europe Sprl.</p>
+  </fieldset>
+
+  <div class="order__buttons">
+    <a class="order__submit-btn btn" href="thanks-page.html">Подтвердить заказ</a>
+    <p class="order__privacy-police page__footnote page__wrapper-content-a">Нажимая кнопку, вы даете согласие на <a class="page__link" href="#">обработку персональных данных</a></p>
+    <button class="order__submit-btn btn btn--empty" type="button">Вернуться в корзину</button>
+  </div>
+
+</form>

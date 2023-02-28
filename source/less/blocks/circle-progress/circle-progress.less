@@ -1,0 +1,18 @@
+.circle-progress {
+
+  &__all {
+    fill: transparent;
+    stroke-width: 1px;
+    stroke: @border-grey;
+  }
+
+  &__full {
+    fill: transparent;
+    stroke: @company-color;
+    stroke-width: 4px;
+    // 2.4 = 1%
+    stroke-dasharray: 240;
+    // начинаем вычитать с 240, если нам нужно отобразить 25%, то это 240 - (100 - 25) * 2,4
+    stroke-dashoffset: 240 - (240 - 75 * 2.4);
+  }
+}

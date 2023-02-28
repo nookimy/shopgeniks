@@ -1,0 +1,43 @@
+.confirmation {
+  box-sizing: border-box;
+
+  &--region {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: @mobile-content-width;
+    padding: 17px 18px 20px;
+    background-color: @light;
+
+    @media (min-width: @tablet-width) {
+      min-width: 330px;
+      padding: 20px 20px 23px;
+    }
+  }
+
+  &--region::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    right: 70px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid @light;
+  }
+
+  &--region .btn {
+    min-width: 120px;
+    margin: unset;
+    padding: 5px;
+    text-transform: unset;
+
+    @media (min-width: @tablet-width) {
+      min-width: 140px;
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,46 @@
+
+<footer class="main-footer">
+  <div class="main-footer__to-up">
+    <include src="source/less/blocks/to-top/to-top.html"></include>
+  </div>
+  <div class="main-footer__wrapper">
+    <div class="main-footer__logo-wrapper">
+      <svg class="main-footer__logo main-footer__logo--geniks" width="125" height="21">
+        <use xlink:href="#icon-logo-g"/>
+      </svg>
+      <picture>
+        <source media="(min-width: 750px)" srcset="./img/main-footer/nika-logo-68x30@3x.png 3x,
+                                                 ./img/main-footer/nika-logo-68x30@2x.png 2x,
+                                                 ./img/main-footer/nika-logo-68x30.png">
+        <img class="main-footer__img" src="./img/main-footer/nika-logo-49x22.png"
+             srcset="./img/main-footer/nika-logo-49x22@3x.png 3x,
+                                         ./img/main-footer/nika-logo-49x22@2x.png 2x,
+                                         ./img/main-footer/nika-logo-49x22.png"
+             alt="Ника">
+      </picture>
+    </div>
+    <div class="main-footer__contacts">
+      <a class="main-footer__tel" href="tel:+79063367733">8 (906) 336-77-33</a>
+      <a href="#"><span class="visually-hidden">Заказать звонок</span>
+        <svg class="main-footer__tel-logo js-btn" width="16" height="16" data-act="open" data-target="js-request--call">
+          <use xlink:href="#icon-callback"/>
+        </svg>
+      </a>
+      <a class="main-footer__mail" href="mailto:nika_shop@list.ru">nika_shop@list.ru</a>
+    </div>
+    <p class="main-footer__description">
+      Интернет-магазин дезинфицирующих профессиональных чистящих средств фирмы «Геникс»
+    </p>
+    <div class="main-footer__wrapper2">
+      <p class="main-footer__owner-copyright">
+        © 2016 - 2018 гг., ИП Лоскутов А. Н.
+      </p>
+      <p class="main-footer__btn btn">Заказы принимаются по всей России</p>
+    </div>
+    <include src="source/less/blocks/footer-menu/footer-menu.html"></include>
+    <p class="main-footer__developer-copyright web-developer">
+      <a class="web-developer__link" href="https://onmaster.ru">Интернет-магазин</a>
+       от onmaster.ru
+    </p>
+  </div>
+</footer>

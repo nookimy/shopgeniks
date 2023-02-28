@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бытовая химия Ника, дезинфицирующие средства, моющие средства, жидкое мыло</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="page delivery">
+<div style="display:none">
+  <include src="source/img/sprite.svg"></include>
+</div>
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <h1 class="visually-hidden">Геникс</h1>
+    <include src="source/less/blocks/main-navigation/main-navigation.html"></include>
+    <div class="main-header__second-column">
+      <a class="main-header__tel" href="tel:+79063367733">+7 (906) 336-77-33</a>
+      <a href="#"><span class="visually-hidden">Заказать звонок</span>
+        <svg class="main-header__tel-logo js-btn" width="16" height="16" data-act="open" data-target="js-request--call" data-overlay="modal-overlay">
+          <use xlink:href="#icon-callback"/>
+        </svg>
+      </a>
+      <include src="source/less/blocks/location/location.html"></include>
+    </div>
+  </div>
+</header>
+<main class="page__main">
+  <div class="breadcrumbs page__wrapper-content-a">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+    </ul>
+  </div>
+  <div class="registration">
+    <h2 class="registration__title page__heading1">Регистрация на сайте</h2>
+    <form class="feedback registration__form" action="#">
+      <input class="feedback__input registration__input" type="text" name="name" id="registration--name" value="" placeholder="ФИО или название компании*">
+      <label class="visually-hidden" for="registration--name">ФИО или название компании*</label>
+      <input class="feedback__input registration__input" type="email" name="pass" id="registration--email" value="" placeholder="E-mail*">
+      <label class="visually-hidden" for="registration--email">E-mail*</label>
+      <input class="feedback__input registration__input" type="tel" name="pass" id="registration--tel" value="" placeholder="+7 ( _ _ _) _ _ _ - _ _ - _ _*">
+      <label class="visually-hidden" for="registration--tel">+7 ( _ _ _) _ _ _ - _ _ - _ _*</label>
+      <input class="feedback__input registration__input" type="password" name="pass" id="registration--pass" value="" placeholder="Придумайте пароль*">
+      <label class="visually-hidden" for="registration--pass">Придумайте пароль*</label>
+      <input class="feedback__input registration__input" type="password" name="pass" id="registration--pass-repeat" value="" placeholder="Подтвердите пароль*">
+      <label class="visually-hidden" for="registration--pass-repeat">Подтвердите пароль*</label>
+      <div class="registration__captcha">
+        <img class="registration__captcha-img" width="160" height="80" src="" alt="captcha">
+        <p class="registration__captcha-text">Введите код с картинки:
+          <a class="registration__refresh-captcha" href="#">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.236 491.236">
+              <path d="M55.89 262.818c-3-26-.5-51.1 6.3-74.3 22.6-77.1 93.5-133.8 177.6-134.8v-50.4c0-2.8 3.5-4.3 5.8-2.6l103.7 76.2c1.7 1.3 1.7 3.9 0 5.1l-103.6 76.2c-2.4 1.7-5.8.2-5.8-2.6v-50.3c-55.3.9-102.5 35-122.8 83.2-7.7 18.2-11.6 38.3-10.5 59.4 1.5 29 12.4 55.7 29.6 77.3 9.2 11.5 7 28.3-4.9 37-11.3 8.3-27.1 6-35.8-5-21.3-26.6-35.5-59-39.6-94.4zm299.4-96.8c17.3 21.5 28.2 48.3 29.6 77.3 1.1 21.2-2.9 41.3-10.5 59.4-20.3 48.2-67.5 82.4-122.8 83.2v-50.3c0-2.8-3.5-4.3-5.8-2.6l-103.7 76.2c-1.7 1.3-1.7 3.9 0 5.1l103.6 76.2c2.4 1.7 5.8.2 5.8-2.6v-50.4c84.1-.9 155.1-57.6 177.6-134.8 6.8-23.2 9.2-48.3 6.3-74.3-4-35.4-18.2-67.8-39.5-94.4-8.8-11-24.5-13.3-35.8-5-11.8 8.7-14 25.5-4.8 37z"/>
+            </svg>
+          </a>
+        </p>
+        <input class="feedback__input registration__input registration__input--captcha" type="password" name="pass" id="confirmation-code" value="">
+        <label class="visually-hidden" for="confirmation-code">Введите код с картинки:</label>
+      </div>
+      <button class="btn feedback__btn registration__btn" type="submit">Зарегистрироваться</button>
+    </form>
+    <p class="feedback__privacy">
+      Нажимая кнопку, вы даете согласие на
+      <a class="feedback__privacy-link js-privacy-btn" href="#">
+        обработку персональных данных
+      </a>.
+    </p>
+  </div>
+</main>
+<include src="source/less/blocks/main-footer/main-footer.html"></include>
+<section class="legal-info">
+  <div class="legal-info__wrapper">
+    Наименование организации: ИП Лоскутов Александр Николаевич
+    Юридический адрес: 424032, Республика Марий Эл, г. Йошкар-Ола, проезд 2-й Зои Космодемьянской, д.10
+    ИНН: 121520898395, ОГРНИП: 316121500053223
+    Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"
+    Г. МОСКВА БИК: 044525999
+    К/с: 30101810845250000999
+    Р/с: 40802810102500005755
+  </div>
+</section>
+<include src="source/less/blocks/modal/modal.html"></include>
+<div class="modal-overlay" data-opened="modal-overlay--opened" data-opened-animation="animation" data-opened-time="700"></div>
+<!--include src="source/less/blocks/main-footer/main-footer.html"></include-->
+<script src="js/js-menu.js"></script>
+<script src="js/js-modal.js"></script>
+<script src="js/js-to-top.js"></script>
+</body>
+</html>

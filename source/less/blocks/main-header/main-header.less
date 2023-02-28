@@ -1,0 +1,92 @@
+.main-header {
+  position: relative;
+  padding: 25px 15px 25px;
+  background-color: @bg-main;
+  border-bottom: 1px solid @border-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: end;
+
+    @media (min-width: @desktop-width) {
+      position: relative;
+      width: @desktop-content-width;
+      margin: 0 auto;
+    }
+  }
+
+  &__second-column {
+    padding-top: 7px;
+    margin-left: auto;
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      margin-left: 0;
+      padding-top: 0;
+      order: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__logo {
+    width: 144px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    display: inline-block;
+    color: @dark;
+    .normal-font(14px;);
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      margin-right: 7px;
+      margin-bottom: 6px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 11px;
+      text-align: right;
+      font-weight: 500;
+    }
+  }
+
+  &__tel-logo {
+    display: none;
+    margin-left: 5px;
+
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      fill: @company-color2;
+      vertical-align: middle;
+      margin-top: -2px;
+    }
+  }
+
+  &__location {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бытовая химия Ника, дезинфицирующие средства, моющие средства, жидкое мыло</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="page">
+<div style="display:none">
+  <include src="source/img/sprite.svg"></include>
+</div>
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <h1 class="visually-hidden">Геникс</h1>
+    <include src="source/less/blocks/main-navigation/main-navigation.html"></include>
+    <div class="main-header__second-column">
+      <a class="main-header__tel" href="tel:+79063367733">+7 (906) 336-77-33</a>
+      <a href="#"><span class="visually-hidden">Заказать звонок</span>
+        <svg class="main-header__tel-logo js-request-call-btn" width="16" height="16" data-act="open" data-target="js-request--call" data-overlay="modal-overlay">
+          <use xlink:href="#icon-callback"/>
+        </svg>
+      </a>
+      <include src="source/less/blocks/location/location.html"></include>
+    </div>
+  </div>
+</header>
+<main>
+  <include src="source/less/blocks/promo-slider/promo-slider.html"></include>
+  <include src="source/less/blocks/advantages/advantages.html"></include>
+  <include src="source/less/blocks/promo-banners/promo-banners.html"></include>
+
+  <section class="promo-products">
+    <div class="page__wrapper-content-a">
+      <h2 class="page__heading2 promo-products__title">Хиты продаж</h2>
+      <p class="promo-products__description">Наиболее востребованные товары в этом сезоне</p>
+      <div class="promo-products__filter">
+        <include src="source/less/blocks/promo-filter/promo-filter.html"></include>
+      </div>
+      <div class="products-cards">
+        <ul class="products-cards__list">
+          <include src="source/less/blocks/card/card--product.html"></include>
+          <include src="source/less/blocks/card/card--product.html"></include>
+          <include src="source/less/blocks/card/card--product.html"></include>
+          <include src="source/less/blocks/card/card--product.html"></include>
+          <include src="source/less/blocks/card/card--product.html"></include>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <include src="source/less/blocks/categories/categories.html"></include>
+  <include src="source/less/blocks/request/request--consultation.html"></include>
+</main>
+<include src="source/less/blocks/main-footer/main-footer.html"></include>
+<section class="legal-info">
+  <div class="legal-info__wrapper">
+    Наименование организации: ИП Лоскутов Александр Николаевич
+    Юридический адрес: 424032, Республика Марий Эл, г. Йошкар-Ола, проезд 2-й Зои Космодемьянской, д.10
+    ИНН: 121520898395, ОГРНИП: 316121500053223
+    Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"
+    Г. МОСКВА БИК: 044525999
+    К/с: 30101810845250000999
+    Р/с: 40802810102500005755
+  </div>
+</section>
+<include src="source/less/blocks/modal/modal.html"></include>
+<div class="modal-overlay" data-opened="modal-overlay--opened" data-opened-animation="animation" data-opened-time="700"></div>
+<!--include src="source/less/blocks/main-footer/main-footer.html"></include-->
+<script src="js/js-menu.js"></script>
+<script src="js/js-modal.js"></script>
+<script src="js/js-to-top.js"></script>
+</body>
+</html>

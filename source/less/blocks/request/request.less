@@ -1,0 +1,163 @@
+.request {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+  }
+
+  &--modal {
+    padding: 50px 40px;
+    margin: 0;
+
+    @media (min-width: @desktop-width) {
+      padding: 35px 30px;
+    }
+  }
+
+  &--call {
+    background-color: #d5c3b7;
+    background-image: linear-gradient(to top, #c8b4a9 0%, #d5c3b7 100%);
+
+    @media (min-width: @desktop-width) {
+      background-repeat: no-repeat;
+      background-image: url("../img/request/girl-callback-620.jpeg");
+      .retina-bg("../img/request/girl-callback-620@2.jpeg"; 620px);
+      .retina-bg2("../img/request/girl-callback-620@3.jpeg"; 620px);
+      background-position: right -55px bottom 0;
+    }
+  }
+
+  &--consultation {
+    margin-bottom: 20px;
+  }
+
+  &--consultation &__text {
+    @media (min-width: @tablet-width) {
+      width: 420px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 500px;
+    }
+  }
+
+  &__container {
+    width: @mobile-content-width-a;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: @tablet-content-width-a;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-content-width;
+    }
+  }
+
+  &__container--consultation {
+    box-sizing: border-box;
+    position: relative;
+    padding: 40px 20px 20px;
+    background-color: #c7eaf0;
+    background-repeat: no-repeat;
+    background-image: url("../img/request/request--consultation-720.jpeg");
+    .retina-bg("../img/request/request--consultation-720@2.jpeg"; 720px);
+    .retina-bg2("../img/request/request--consultation-720@3.jpeg"; 720px);
+    background-size: cover;
+    box-shadow: 1px 2px 65px rgba(0, 0, 0, 0.12);
+
+    @media (min-width: @tablet-width) {
+      padding: 55px 64px 30px;
+      background-image: url("../img/request/request--consultation-1140.jpeg");
+      .retina-bg("../img/request/request--consultation-1140@2.jpeg"; 1140px);
+      .retina-bg2("../img/request/request--consultation-1140@3.jpeg"; 1140px);
+    }
+  }
+
+  &__container--consultation::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      right: 11%;
+      top: -70px;
+      width: 120px;
+      height: 225px;
+      background-repeat: no-repeat;
+      background-image: url("../img/request/request--consultation-tel-120.png");
+      .retina-bg("../img/request/request--consultation-tel-120@2.png"; 120px);
+      .retina-bg2("../img/request/request--consultation-tel-120@3.png"; 120px);
+      background-size: contain;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 5%;
+      width: 150px;
+      height: 280px;
+      background-image: url("../img/request/request--consultation-tel-200.png");
+      .retina-bg("../img/request/request--consultation-tel-200@2.png"; 200px);
+      .retina-bg2("../img/request/request--consultation-tel-200@3.png"; 200px);
+    }
+  }
+
+  &__container--call {
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      width: 330px;
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 15px auto;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 14px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__text::before {
+    content: "";
+    display: block;
+    width: 12.5vw;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: @text-copyright;
+  }
+
+  &__form--consultation {
+    width: 185px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 420px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 500px;
+    }
+  }
+
+  &__form--call {
+    width: 250px;
+  }
+}

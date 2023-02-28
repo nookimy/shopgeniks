@@ -1,0 +1,61 @@
+.reviews {
+  margin-top: 1em;
+  text-align: center;
+
+  &__element {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 45px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    border-radius: 30px;
+    background: #ffffff;
+    border: 1px solid @company-color2;
+    float: left;
+    margin-left: -45px;
+    margin-top: 4px;
+  }
+
+  &__param {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  &__value {
+    font-weight: normal;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__answer {
+    margin-top: 16px;
+    padding-left: 45px;
+    font-weight: bold;
+
+    p {
+      font-weight: normal;
+    }
+  }
+
+  &__form-btn {
+    font-size: 14px;
+  }
+}

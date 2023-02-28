@@ -1,0 +1,42 @@
+.btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px 11px 20px;
+  color: @light;
+  .normal-font(12px; 1.25; 500);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @company-color;
+  border: none;
+  cursor: pointer;
+  transition: @transition;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+
+  &--empty {
+    color: @company-color;
+    background-color: @light;
+    border: 1px solid @company-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: @light;
+    background-color: @btn-hover;
+  }
+
+  &:active {
+    color: @light;
+    background-color: @btn-active;
+  }
+}

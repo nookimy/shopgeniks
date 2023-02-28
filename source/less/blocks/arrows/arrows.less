@@ -1,0 +1,35 @@
+.arrows {
+
+  &__item {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: @transition;
+  }
+
+  &__item--left {
+    left: 10px;
+    border-top: 2px solid @dark;
+    border-left: 2px solid @dark;
+    transform: rotate(-45deg);
+  }
+
+  &__item--right {
+    right: 10px;
+    border-top: 2px solid @dark;
+    border-right: 2px solid @dark;
+    transform: rotate(45deg);
+  }
+
+  &__item:hover,
+  &__item:focus,
+  &__item:active {
+    border-color: @btn-hover;
+  }
+}

@@ -1,0 +1,211 @@
+.main-navigation {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  top: 25px;
+  width: 160px;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    width: 69%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+
+  &--opened {
+    @media (max-width: @desktop-width - 1) {
+      position: absolute;
+      top: calc(25px + 25px + 11px);
+      left: 0;
+      width: 100vw;
+      padding-bottom: 30px;
+
+      @media (min-width: @tablet-width) {
+        box-sizing: border-box;
+        top: 0;
+        width: 69%;
+      }
+    }
+  }
+
+  &__wrapper {
+    @media (max-width: @desktop-width - 1) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @media (min-width: @tablet-width) {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
+  }
+
+  &--opened &__wrapper {
+    @media (max-width: @desktop-width - 1) {
+      width: 100%;
+      padding-top: 8px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      background-color: fade(@company-color2, 90%);
+
+      @media (min-width: @tablet-width) {
+        padding-top: 27px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  &__toggle { //menu button "hamburger" --
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 20px;
+    margin-right: 23px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: @text-copyright;
+      box-shadow: 0 8px 0 0 @text-copyright,
+        0 16px 0 0 @text-copyright;
+    }
+  }
+  //--menu button "hamburger"
+
+  &__logo-img {
+    width: 144px;
+    height: 25px;
+    margin-bottom: 18px;
+    order: -1;
+    fill: @company-color2;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: calc(~"50% - 115px");
+      width: 230px;
+      height: 40px;
+      margin-bottom: 0;
+      order: unset;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -3px;
+    }
+  }
+
+  &--opened &__logo-link {
+    @media (max-width: @desktop-width - 1) {
+      margin-top: calc(-25px - 11px);
+      margin-bottom: 0;
+      padding-left: 15px;
+
+      @media (min-width: @tablet-width) {
+        top: 19px;
+        right: 3.7vw;
+        left: auto;
+        margin-top: unset;
+        fill: @light;
+      }
+    }
+  }
+
+  &__menu {
+    @media (max-width: @desktop-width - 1) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: -1;
+    }
+  }
+
+  &--opened &__menu {
+    @media (max-width: @desktop-width - 1) {
+      display: block;
+    }
+  }
+
+  &--opened &__toggle {
+    @media (max-width: @desktop-width - 1) {
+      margin-left: 1px;
+
+      &::before {
+        background-color: @light;
+        box-shadow: 0 8px 0 0 @light,
+          0 16px 0 0 @light;
+      }
+    }
+  }
+
+  &--opened &__cart-icon {
+    @media (max-width: @desktop-width - 1) {
+      fill: @light;
+    }
+  }
+
+  &--opened &__mini-cart {
+    @media (max-width: @desktop-width - 1) {
+      color: @light;
+      margin-right: auto;
+    }
+  }
+
+  &__search {
+    @media (max-width: @desktop-width - 1) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: -2;
+    }
+  }
+
+  &--opened &__search {
+    @media (max-width: @desktop-width - 1) {
+      display: block;
+    }
+  }
+
+  &__user-menu {
+    @media (max-width: @desktop-width - 1) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      float: left;
+    }
+  }
+
+  &__cart {
+    @media (min-width: @desktop-width) {
+      display: block;
+      float: left;
+    }
+  }
+
+  &--opened &__user-menu {
+    @media (max-width: @desktop-width - 1) {
+      display: block;
+    }
+  }
+}

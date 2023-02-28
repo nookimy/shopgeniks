@@ -1,0 +1,55 @@
+.cross {
+  width: @cross-size;
+  height: @cross-size;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: @transition;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: @cross-size;
+    height: @cross-width;
+    background-color: @cross-color-grey;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &--rel {
+    position: relative;
+  }
+
+  &--grey::before,
+  &--grey::after {
+    background-color: @cross-color-grey;
+  }
+
+  &--light::before,
+  &--light::after {
+    background-color: @cross-color-light;
+  }
+
+  &--small::before,
+  &--small::after {
+    width: @cross-size--small;
+    height: @cross-width--small;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,199 @@
+.om-regions-panel {
+    position: relative;
+}
+
+.om-regions-panel__link::after {
+    content: "\25bc";
+    display: inline-block;
+    font-size: .65em;
+    margin-left: 5px;
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.om-regions-panel__tooltip {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    right: 10px;
+    top: 110px;
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.20);
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.20);
+    border: 1px solid #cccccc;
+}
+
+@media (min-width: 750px) {
+    .om-regions-panel__tooltip {
+        right: 20px;
+        left: auto;
+        top: 82px;
+        min-width: 300px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .om-regions-panel__tooltip {
+        top: calc(110% + 8px);
+        left: 0;
+        right: auto;
+    }
+}
+
+.om-regions-panel__tooltip:after, .om-regions-panel__tooltip:before {
+    bottom: 100%;
+    right: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+@media (min-width: 1170px) {
+    .om-regions-panel__tooltip:after, .om-regions-panel__tooltip:before {
+        left: 20%;
+    }
+}
+
+.om-regions-panel__tooltip:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 7px;
+    margin-left: -7px;
+}
+.om-regions-panel__tooltip:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #cccccc;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+.om-regions-panel__label {
+    font-weight: bold;
+}
+
+.om-regions-panel__buttons {
+    white-space: nowrap;
+}
+
+.om-regions-panel__btn {
+    display: inline-block;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background: #EEEEEE;
+    margin: 10px 5px 0 0;
+}
+
+.om-regions-panel__btn--inverted {
+    background: #FFFFFF;
+}
+
+.om-regions-panel__btn:last-of-type {
+    margin-right: 0;
+}
+
+.om-regions-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10001;
+}
+
+.om-regions-popup__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.om-regions-popup__close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 15px;
+    width: 15px;
+    display: block;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADHSURBVHjalNIxSgNBFIDhL88cZvuAEMgB0i3YpgoIYpfKMp2lVhbpUkmKVIaInsBATuABPIaFzS6EyUwYt5zd72fe7Azatv3GAp/qnxG2gTnWmP4D7rEIHHBTGejhHXbRLdYERvjoIcTJy0uBHt72MMWlwHUH56cQrpqmSbf3gy9s8ItVB9/TD6Mw3wFLPOMlBy/hMR7xgPvSIUYBvnVbfUJb+guRgftkxmMpEBk4y8yYDUQGlu74WSAwqYDZwBDbSpgGXv8GABw0N49BosrjAAAAAElFTkSuQmCC') no-repeat;
+}
+
+.om-regions-popup__close:hover {
+    opacity: 0.7;
+}
+
+.om-regions-popup__content {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    height: 400px;
+    margin-top: -240px;
+    padding: 40px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: content-box;
+}
+
+@media (min-width: 750px) {
+    .om-regions-popup__content {
+        left: 50%;
+        right: auto;
+        margin-left: -300px;
+        width: 520px;
+    }
+}
+
+.om-regions-popup__title {
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.om-regions-popup__search {
+    margin-bottom: 20px;
+}
+
+.om-regions-popup__list {
+    overflow-y: scroll;
+}
+
+.om-regions-popup__list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #EFEFEF;
+}
+
+.om-regions-popup__list::-webkit-scrollbar-thumb {
+    background-color: #ADADAD;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.om-regions-popup__region {
+    display: block;
+    padding: 2px;
+    margin: 2px;
+}

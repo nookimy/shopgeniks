@@ -1,0 +1,101 @@
+image: node:10
+
+variables:
+  GIT_SSL_NO_VERIFY: "true"
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+- environment
+- test
+- build
+- upload
+
+install_dependencies:
+  stage: environment
+  script:
+  - node -v
+  - npm -v
+  - npm i
+  artifacts:
+    paths:
+    - node_modules/
+    expire_in: 30 minutes
+
+  tags:
+  - docker-runner
+
+lint:
+  stage: test
+  script:
+  - npm info stylelint version
+  - npm test
+
+  tags:
+  - docker-runner
+
+  allow_failure: true
+
+yaspeller:
+  stage: test
+  script:
+  - npm info yaspeller version
+  - npm run yaspeller
+
+  tags:
+  - docker-runner
+
+  allow_failure: true
+
+pages:
+  stage: build
+  script:
+  - ls
+  - $COMMAND_TO_BUILD_HTML
+  - ls
+  - mkdir .public
+  - cp -r $FOLDER_WITH_HTML_BUILD/. .public
+  - cp -r robots.txt .public
+  - mv .public public
+  - ls
+  artifacts:
+    paths:
+    - public
+    expire_in: 30 minutes
+
+  only:
+  - master
+
+  when: manual
+
+  tags:
+  - docker-runner
+
+build_template:
+  stage: build
+  script:
+  - ls
+  - $COMMAND_TO_BUILD_PROJECT
+  - ls
+  artifacts:
+    paths:
+    - $FOLDER_WITH_TEMPLATE_BUILD
+    expire_in: 30 minutes
+
+  tags:
+  - docker-runner
+
+upload:
+  stage: upload
+  image: mwienk/docker-lftp:latest
+  script:
+  - cp $FOLDER_WITH_TEMPLATE_BUILD/$TEMPLATE_NAME/css/*.tmpcss $FOLDER_WITH_TEMPLATE_BUILD/$TEMPLATE_NAME/css/style.css
+  - lftp ftp://$FTP_USER:$FTP_USER_PASS@$FTP_URL -e "set ftp:ssl-allow false; mirror -eRvc $FOLDER_WITH_TEMPLATE_BUILD/$TEMPLATE_NAME/ $TEMPLATE_NAME/; exit;"
+
+  only:
+  - master
+
+  tags:
+    - docker-runner

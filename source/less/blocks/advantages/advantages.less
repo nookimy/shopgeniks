@@ -1,0 +1,80 @@
+.advantages {
+  max-width: 100%;
+  padding-top: 15px;
+  background: transparent;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    .list();
+    margin: 0 auto;
+    background: transparent;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-width;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    width: 50%;
+    margin-bottom: 30px;
+    background: transparent;
+
+    @media (min-width: 640px) {
+      width: 25%;
+    }
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+
+  &__item--no-microbe::before {
+    width: 48px;
+    background-image: url("../img/advantages/no-microbe.svg");
+  }
+
+  &__item--no-toxic::before {
+    width: 47px;
+    background-image: url("../img/advantages/no-toxic.svg");
+  }
+
+  &__item--standard::before {
+    width: 53px;
+    background-image: url("../img/advantages/standard.svg");
+  }
+
+  &__item--price::before {
+    width: 46px;
+    background-image: url("../img/advantages/price.svg");
+  }
+
+  &__text {
+    width: 130px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      width: 150px;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 220px;
+      font-size: 16px;
+    }
+  }
+}

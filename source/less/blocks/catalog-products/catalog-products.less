@@ -1,0 +1,23 @@
+.catalog-products {
+  @media (min-width: @desktop-width) {
+    padding-left: 20px;
+  }
+
+  &__sorting {
+    width: @mobile-content-width-a;
+    .list();
+    margin: 0 auto;
+    padding: 15px 0;
+
+    @media (min-width: @tablet-width) {
+      width: @tablet-content-width-a;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: 15px;
+    }
+  }
+}

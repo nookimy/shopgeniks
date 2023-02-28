@@ -1,0 +1,33 @@
+
+<h1 class="cart__title page__heading1 page__title" id="edit">Корзина</h1>
+<include src="source/less/blocks/cart-table/cart-table.html"></include>
+<include src="source/less/blocks/cart-calculation/cart-calculation.html"></include>
+<div class="cart__buy-buttons">
+  <a class="cart__buy-button btn" href="order-page.html">оформить заказ</a>
+  <a class="cart__buy-button btn btn--empty" href="catalog-page.html">Продолжить покупки</a>
+</div>
+<div class="cart__discount">
+  <section class="promo-code cart__promo-code card">
+    <h3 class="promo-code__title">Промокод</h3>
+    <form class="promo-code__form" action="#">
+      <div class="promo-code__input-wrapper">
+        <input class="promo-code__input" type="text" name="promo-code" id="promo-code" required>
+        <label class="promo-code__label" for="promo-code">Код купона на скидку *</label>
+      </div>
+      <button class="promo-code__btn btn" type="submit">Активировать</button>
+      <p class="promo-code__text">* в одном заказе можно использовать только один промокод</p>
+    </form>
+  </section>
+  <section class="up-to-discount cart__up-to-discount card">
+    <div class="up-to-discount__icon">
+      <svg class="up-to-discount__progress" width="40" height="40">
+        <use xlink:href="#icon-circle"/>
+      </svg>
+    </div>
+    <div class="up-to-discount__description">
+      <h3 class="up-to-discount__title">До скидки 15% осталось</h3>
+      <p class="visually-hidden for-discount">20000</p>
+      <p class="up-to-discount__value">8024,50 ₽</p>
+    </div>
+  </section>
+</div>

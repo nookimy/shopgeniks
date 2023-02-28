@@ -1,0 +1,75 @@
+.location {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    display: block;
+  }
+
+  &__icon {
+    width: 8px;
+    height: 4px;
+    fill: @dark;
+    transition: @transition;
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    transition: @transition;
+  }
+
+  &__text--title {
+    color: @text-copyright;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 10px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
+    }
+  }
+
+  &__text--city {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    .normal-font(12px; 1.25; 400);
+    color: @dark;
+    max-width: 128px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @media (min-width: @desktop-width) {
+      max-width: 170px;
+    }
+  }
+
+  &__text--city:hover {
+    color: @company-color2;
+  }
+
+  &__text--city:active {
+    color: @company-color2--pressing;
+  }
+
+  &__text--city:hover + &__icon {
+    fill: @company-color2;
+  }
+
+  &__text--city:active + &__icon {
+    fill: @company-color2--pressing;
+  }
+}

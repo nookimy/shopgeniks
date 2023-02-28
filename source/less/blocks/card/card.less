@@ -1,0 +1,218 @@
+.card {
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 15px;
+  box-shadow: 1px 2px 65px rgba(0, 0, 0, 0.12);
+  transition: @transition;
+
+  &--delivery {
+    padding: 20px 10px 15px 70px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 95px;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 27px 20px 20px 100px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 8px 0;
+    padding: 0;
+  }
+
+  &__text {
+    margin: 0 0 11px 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__text:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__payment-systems {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  &__payment-system {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  &__description {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      padding: 0 45px 15px 9.1%;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 7.6%;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__picture {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      align-self: flex-start;
+      width: 100%;
+      height: 270px;
+    }
+  }
+
+  &__img {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      max-width: 220px;
+      max-height: 270px;
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: @tablet-width) {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: @dark;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  &__prices {
+    justify-content: flex-start;
+    margin-top: auto;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid @company-color;
+    cursor: pointer;
+    transition: @transition;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: @company-color;
+  }
+
+  &__bag-icon {
+    width: 17px;
+    height: 21px;
+    display: block;
+    fill: @company-color;
+    transition: @transition;
+  }
+
+  &__btn:hover &__bag-icon,
+  &__btn:focus &__bag-icon {
+    fill: @light;
+  }
+
+  &__buy-input {
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  &__label-list {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    .list();
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 5px;
+      left: unset;
+      flex-direction: column;
+    }
+  }
+
+  &__label-item {
+    margin-left: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 7px 12px;
+    color: @light;
+    .normal-font(12px; 1.2; 500);
+    text-transform: uppercase;
+    border-radius: 10px;
+  }
+
+  &__label-item--new,
+  &__label-item--new:hover,
+  &__label-item--new:focus,
+  &__label-item--new:active {
+    background-color: @label-new;
+  }
+
+  &__label-item--hit,
+  &__label-item--hit:hover,
+  &__label-item--hit:focus,
+  &__label-item--hit:active {
+    background-color: @label-hit;
+  }
+
+  &__label-item--action,
+  &__label-item--action:hover,
+  &__label-item--action:focus,
+  &__label-item--action:active {
+    background-color: @label-action;
+  }
+}

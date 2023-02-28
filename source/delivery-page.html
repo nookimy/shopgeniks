@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бытовая химия Ника, дезинфицирующие средства, моющие средства, жидкое мыло</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="page delivery">
+<div style="display:none">
+  <include src="source/img/sprite.svg"></include>
+</div>
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <h1 class="visually-hidden">Геникс</h1>
+    <include src="source/less/blocks/main-navigation/main-navigation.html"></include>
+    <div class="main-header__second-column">
+      <a class="main-header__tel" href="tel:+79063367733">+7 (906) 336-77-33</a>
+      <a href="#"><span class="visually-hidden">Заказать звонок</span>
+        <svg class="main-header__tel-logo js-btn" width="16" height="16" data-act="open" data-target="js-request--call" data-overlay="modal-overlay">
+          <use xlink:href="#icon-callback"/>
+        </svg>
+      </a>
+      <include src="source/less/blocks/location/location.html"></include>
+    </div>
+  </div>
+</header>
+<main class="page__main">
+  <div class="breadcrumbs page__wrapper-content-a">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Доставка и оплата</a>
+      </li>
+    </ul>
+  </div>
+  <section class="delivery__content">
+    <h1 class="delivery__title page__heading1 page__title">Доставка и оплата</h1>
+    <form class="delivery__select-region" action="#">
+      <label class="delivery__select-label page__heading2" for="region">Выберите свой город</label>
+      <select class="delivery__select page__heading3" id="region" name="region">
+        <option class="delivery__select-option page__heading3" value="value1">Йошкар-Ола, Республика Марий Эл</option>
+        <option class="delivery__select-option page__heading3" value="value2">Чебоксары, Республика Чувашия</option>
+        <option class="delivery__select-option page__heading3" value="value3">Казань, Республика Татарстан</option>
+      </select>
+    </form>
+    <ul class="delivery__list delivery__list--main">
+      <li class="delivery__item">
+        <h2 class="delivery__subtitle page__heading2">Способы Доставки</h2>
+        <div class="card card--delivery delivery__option">
+          <svg class="delivery__option--icon" width="37" height="37">
+            <use xlink:href="#icon-courier"/>
+          </svg>
+          <h3 class="page__heading3">Доставка курьером до двери</h3>
+          <p class="card__text">Минимальная сумма заказа от 500 ₽</p>
+        </div>
+      </li>
+      <li class="delivery__item">
+        <h2 class="delivery__subtitle page__heading2">Способы оплаты:</h2>
+        <div class="card card--delivery delivery__option">
+          <svg class="delivery__option--icon" width="37" height="37">
+            <use xlink:href="#icon-pay-online"/>
+          </svg>
+          <h3 class="card__subtitle page__heading3">Банковской картой через сайт</h3>
+          <p class="card__text">Для выбора оплаты товара через сайт на странице “Оформление заказа” необходимо выбрать способ оплаты «Оплата картой Онлайн».
+            Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:</p>
+          <include src="source/less/blocks/bank-cards/bank-cards.html"></include>
+        </div>
+        <div class="card card--delivery delivery__option">
+          <svg class="delivery__option--icon" width="37" height="37">
+            <use xlink:href="#icon-pay-cash"/>
+          </svg>
+          <h3 class="card__subtitle page__heading3">Наличными при получении</h3>
+          <p class="card__text">Можно оплатить покупку при получении наличными.</p>
+        </div>
+        <div class="card card--delivery delivery__option">
+          <svg class="delivery__option--icon" width="37" height="37">
+            <use xlink:href="#icon-pay-card"/>
+          </svg>
+          <h3 class="card__subtitle page__heading3">Картой при получении</h3>
+          <p class="card__text">Оплата кредитной картой при получении доступна для заказов на любую сумму.</p>
+        </div>
+      </li>
+      <li class="delivery__item">
+        <h2 class="delivery__subtitle page__heading2">Возврат товара</h2>
+        <div class="card card--delivery delivery__option">
+          <svg class="delivery__option--icon" width="37" height="37">
+            <use xlink:href="#icon-return"/>
+          </svg>
+          <h3 class="card__subtitle page__heading3">Срок возврата товара надлежащего качества составляет 30 дней с момента получения товара</h3>
+          <p class="card__text">Возврат переведенных средств, производится на Ваш банковский счет в течение 5 - 30 рабочих дней (срок зависит от Банка, который выдал Вашу банковскую карту)</p>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="delivery__list delivery__list--secondary">
+      <li class="delivery__item delivery__item--secondary">
+        <img class="delivery__item-icon" src="./img/map-of-russia.svg" alt="По всей России" width="150" height="82">
+        <h3 class="card__subtitle page__heading3">Территория продаж - вся Россия</h3>
+        <p class="card__text">Продукция ООО НПФ «Геникс» продается на всей территории России и в странах ближнего зарубежья. </p>
+      </li>
+      <li class="delivery__item delivery__item--secondary">
+        <img class="delivery__item-icon" src="./img/certificate.svg" alt="По всей России" width="88" height="85">
+        <h3 class="card__subtitle page__heading3">Сертификаты качества на всю продукции</h3>
+        <p class="card__text">Система менеджмента качества сертифицирована на соответствие требованиям международного стандатра ISO 9001:2008. Получены сертификаты в системе ГОСТ Р (для использования на российском рынке) и международный сертификат IQNet. </p>
+      </li>
+    </ul>
+  </section>
+  <include src="source/less/blocks/request/request--consultation.html"></include>
+</main>
+<include src="source/less/blocks/main-footer/main-footer.html"></include>
+<section class="legal-info">
+  <div class="legal-info__wrapper">
+    Наименование организации: ИП Лоскутов Александр Николаевич
+    Юридический адрес: 424032, Республика Марий Эл, г. Йошкар-Ола, проезд 2-й Зои Космодемьянской, д.10
+    ИНН: 121520898395, ОГРНИП: 316121500053223
+    Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"
+    Г. МОСКВА БИК: 044525999
+    К/с: 30101810845250000999
+    Р/с: 40802810102500005755
+  </div>
+</section>
+<include src="source/less/blocks/modal/modal.html"></include>
+<div class="modal-overlay" data-opened="modal-overlay--opened" data-opened-animation="animation" data-opened-time="700"></div>
+<!--include src="source/less/blocks/main-footer/main-footer.html"></include-->
+<script src="js/js-menu.js"></script>
+<script src="js/js-modal.js"></script>
+<script src="js/js-to-top.js"></script>
+</body>
+</html>

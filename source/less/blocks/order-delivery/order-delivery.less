@@ -1,0 +1,26 @@
+.order-delivery {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__text {
+    color: @privacy;
+    .normal-font(12px; 1.25; 400);
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
+  }
+}

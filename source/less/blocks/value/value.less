@@ -1,0 +1,46 @@
+.value {
+  box-sizing: border-box;
+  display: flex;
+
+  width: 100px;
+  padding: 1px;
+  border: 1px solid @border-grey;
+  background-color: @bg-main;
+
+  &__input {
+    display: inline;
+    width: 40px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: @bg-main;
+    border: none;
+  }
+
+  &__input--small {
+    font-size: 12px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__toggle {
+    padding: 8px 10px;
+    border: none;
+    background-color: @bg-main;
+    cursor: pointer;
+  }
+
+  &__toggle--small {
+    padding: 5px 7px;
+
+    @media (min-width: @tablet-width) {
+      padding: 7px 8px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+
+<table class="cart-table">
+  <tbody>
+  <tr class="cart-table__row cart-table__row--title">
+    <th class="cart-table__cell--head">
+      Товар
+    </th>
+    <th class="cart-table__cell--head">
+      Цена
+    </th>
+    <th class="cart-table__cell--head">
+      Количество
+    </th>
+    <th class="cart-table__cell--head">
+      Сумма
+    </th>
+    <th class="cart-table__cell--head">
+      <span class="visually-hidden">Удаление из корзины</span>
+    </th>
+  </tr>
+  <tr class="cart-table__row cart-table__row--product">
+    <td class="cart-table__cell cart-table__cell--title">
+      <include src="source/less/blocks/card/card--cart.html"></include>
+    </td>
+    <td class="cart-table__cell cart-table__cell--price">
+      <ul class="prices cart__prices">
+        <li class="prices__item prices__item--cart">52500 ₽</li>
+        <li class="prices__item prices__item--old prices__item--cart-old">50000 ₽</li>
+      </ul>
+    </td>
+    <td class="cart-table__cell cart-table__cell--value">
+      <div class="value cart__value">
+        <button class="value__toggle value__toggle--small value__toggle--plus" type="button">-</button>
+        <label for="number-of-goods"></label>
+        <input class="value__input value__input--small" type="number" name="number-of-goods" id="number-of-goods" value="1">
+        <button class="value__toggle value__toggle--small value__toggle--minus" type="button">+</button>
+      </div>
+    </td>
+    <td class="cart-table__cell cart-table__cell--total">
+      <ul class="prices cart__total">
+        <li class="prices__item prices__item--cart-total">52500 ₽</li>
+        <li class="prices__item prices__item--old prices__item--cart-total-old">50000 ₽</li>
+      </ul>
+    </td>
+    <td class="cart-table__cell cart-table__cell--remove">
+      <button class="cart-table__remove" type="button">
+        <span class="visually-hidden">Удалить товар из корзины</span>
+        <svg class="cart-table__remove-icon" width="8" height="8">
+          <use xlink:href="#icon-cross"/>
+        </svg>
+      </button>
+    </td>
+  </tr>
+  <tr class="cart-table__row cart-table__row--product">
+    <td class="cart-table__cell cart-table__cell--title">
+      <include src="source/less/blocks/card/card--cart.html"></include>
+    </td>
+    <td class="cart-table__cell cart-table__cell--price">
+      <ul class="prices cart__prices">
+        <li class="prices__item prices__item--cart">52500 ₽</li>
+        <li class="prices__item prices__item--old prices__item--cart-old">50000 ₽</li>
+      </ul>
+    </td>
+    <td class="cart-table__cell cart-table__cell--value">
+      <div class="value cart__value">
+        <button class="value__toggle value__toggle--small value__toggle--plus" type="button">-</button>
+        <label for="number-of-goods2"></label>
+        <input class="value__input value__input--small" type="number" name="number-of-goods" id="number-of-goods2" value="1">
+        <button class="value__toggle value__toggle--small value__toggle--minus" type="button">+</button>
+      </div>
+    </td>
+    <td class="cart-table__cell cart-table__cell--total">
+      <ul class="prices cart__total">
+        <li class="prices__item prices__item--cart-total">52500 ₽</li>
+        <li class="prices__item prices__item--old prices__item--cart-total-old">50000 ₽</li>
+      </ul>
+    </td>
+    <td class="cart-table__cell cart-table__cell--remove">
+      <button class="cart-table__remove" type="button">
+        <span class="visually-hidden">Удалить товар из корзины</span>
+        <svg class="cart-table__remove-icon" width="8" height="8">
+          <use xlink:href="#icon-cross"/>
+        </svg>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 62 64" enable-background="new 0 0 62 64" xml:space="preserve">
+<g>
+	
+		<path id="" fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M31,1c0,0-16,5-30,7v21.684c0,10.084,5.422,19.389,14.196,24.361L31,63l15.804-8.956C55.578,49.073,61,39.768,61,29.684V8
+		C47,6,31,1,31,1z"/>
+	<g>
+		
+			<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="31" cy="30" r="15"/>
+		<g>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31" y1="8" x2="31" y2="15"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31" y1="45" x2="31" y2="51"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10" y1="30" x2="16" y2="30"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="46" y1="30" x2="52" y2="30"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="16" y1="17" x2="19" y2="20"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="41" y1="42" x2="44" y2="45"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18" y1="45" x2="21" y2="42"/>
+			
+				<line fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="43" y1="20" x2="46" y2="17"/>
+		</g>
+		<g>
+			
+				<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="27" cy="34" r="4"/>
+			
+				<circle fill="none" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="36" cy="26" r="3"/>
+			<circle fill="#3B3B3B" cx="27" cy="24" r="2"/>
+			<circle fill="#3B3B3B" cx="37" cy="36" r="2"/>
+		</g>
+	</g>
+</g>
+</svg>

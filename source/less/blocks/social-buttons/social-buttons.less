@@ -1,0 +1,28 @@
+.social-buttons {
+
+  &__list {
+    display: flex;
+    .list();
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: @icon-grey;
+    transition: @transition;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: fade(@company-color, 100%);
+  }
+}

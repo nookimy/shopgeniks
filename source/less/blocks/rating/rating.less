@@ -1,0 +1,35 @@
+.rating {
+  display: flex;
+  .list();
+
+  &__item {
+    width: 10px;
+    height: 9px;
+    margin-right: 3px;
+
+    @media (min-width: @tablet-width) {
+      width: 16px;
+      height: 14px;
+      margin-right: 5px;
+    }
+  }
+
+  &__icon {
+    fill: @border-grey;
+    transition: @transition;
+
+    @media (min-width: @tablet-width) {
+      width: 16px;
+      height: 14px;
+    }
+  }
+
+  &__icon--active {
+    fill: @company-color;
+  }
+
+  &__item:hover &__icon,
+  &__item:focus &__icon {
+    fill: @company-color--pressing;
+  }
+}

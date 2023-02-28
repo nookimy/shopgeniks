@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бытовая химия Ника, дезинфицирующие средства, моющие средства, жидкое мыло</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="page catalog">
+<div style="display:none">
+  <include src="source/img/sprite.svg"></include>
+</div>
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <h1 class="visually-hidden">Геникс</h1>
+    <include src="source/less/blocks/main-navigation/main-navigation.html"></include>
+    <div class="main-header__second-column">
+      <a class="main-header__tel" href="tel:+79063367733">+7 (906) 336-77-33</a>
+      <a href="#"><span class="visually-hidden">Заказать звонок</span>
+        <svg class="main-header__tel-logo js-btn" width="16" height="16" data-act="open" data-target="js-request--call">
+          <use xlink:href="#icon-callback"/>
+        </svg>
+      </a>
+      <include src="source/less/blocks/location/location.html"></include>
+    </div>
+  </div>
+</header>
+<main class="page__main">
+  <div class="breadcrumbs page__wrapper-content-a">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Детская линейка</a>
+      </li>
+    </ul>
+  </div>
+  <h1 class="catalog__title page__heading1 page__title">Каталог</h1>
+  <div class="catalog__content">
+    <div>
+      <section class="catalog-menu catalog__menu">
+        <button class="catalog-menu__close-btn catalog-menu__close-btn--opened js-btn" data-target="js-catalog-menu__list, catalog-menu__close-btn" data-opened="catalog-menu__close-btn--opened" data-act="close" type="button" title="Закрыть">
+          Закрыть
+          <svg class="catalog-menu__cross" width="9" height="9">
+            <use xlink:href="#icon-cross"/>
+          </svg>
+        </button>
+        <h2 class="catalog-menu__title js-btn" data-act="" data-target="js-catalog-menu__list, catalog-menu__close-btn">
+          <svg class="catalog-menu__title-icon" width="10" height="10">
+            <use xlink:href="#icon-catalog"/>
+          </svg>
+          Весь каталог
+        </h2>
+        <ul class="catalog-menu__list catalog-menu__list--opened js-catalog-menu__list" data-opened="catalog-menu__list--opened">
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Наборы</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link catalog-menu__link--active">Детская линейка</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Для чистки плит</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Для стирки белья</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Для сантехники</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Для пола</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Для стекол</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Мыло</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Крем для рук</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Аэрозоль для дезинфекции воздуха</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Дезинфекция</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Антисептики для рук</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="">Машиностроение</a>
+          </li>
+        </ul>
+      </section>
+      <div class="catalog__newsletter-subscription catalog__newsletter-subscription--desktop">
+        <include src="source/less/blocks/newsletter-subscription/newsletter-subscription.html"></include>
+      </div>
+    </div>
+    <div class="catalog__catalog-products">
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Товары магазина</h2>
+        <include src="source/less/blocks/sorting/sorting.html"></include>
+        <div class="products-cards">
+          <ul class="products-cards__list">
+            <include src="source/less/blocks/card/card--product.html"></include>
+            <include src="source/less/blocks/card/card--product.html"></include>
+            <include src="source/less/blocks/card/card--product.html"></include>
+            <include src="source/less/blocks/card/card--product.html"></include>
+            <include src="source/less/blocks/card/card--product.html"></include>
+          </ul>
+        </div>
+      </section>
+      <div class="catalog__newsletter-subscription catalog__newsletter-subscription--mobile">
+        <include src="source/less/blocks/newsletter-subscription/newsletter-subscription.html"></include>
+      </div>
+    </div>
+  </div>
+
+  <include src="source/less/blocks/advantages/advantages.html"></include>
+  <include src="source/less/blocks/request/request--consultation.html"></include>
+</main>
+<include src="source/less/blocks/main-footer/main-footer.html"></include>
+<section class="legal-info">
+  <div class="legal-info__wrapper">
+    Наименование организации: ИП Лоскутов Александр Николаевич
+    Юридический адрес: 424032, Республика Марий Эл, г. Йошкар-Ола, проезд 2-й Зои Космодемьянской, д.10
+    ИНН: 121520898395, ОГРНИП: 316121500053223
+    Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"
+    Г. МОСКВА БИК: 044525999
+    К/с: 30101810845250000999
+    Р/с: 40802810102500005755
+  </div>
+</section>
+<include src="source/less/blocks/modal/modal.html"></include>
+<div class="modal-overlay" data-opened="modal-overlay--opened" data-opened-animation="animation" data-opened-time="700"></div>
+<!--include src="source/less/blocks/main-footer/main-footer.html"></include-->
+<script src="js/js-menu.js"></script>
+<script src="js/js-modal.js"></script>
+<script src="js/js-to-top.js"></script>
+</body>
+</html>

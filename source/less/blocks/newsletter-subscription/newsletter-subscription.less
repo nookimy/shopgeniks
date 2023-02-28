@@ -1,0 +1,120 @@
+.newsletter-subscription {
+  margin-bottom: 15px;
+
+  &__wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px 15px;
+    background-color: #c2af9e;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-image: url("../img/newsletter-subscription/newsletter-subscription-bg1-x200.jpeg");
+    .retina-bg("../img/newsletter-subscription/newsletter-subscription-bg1-x200@2.jpeg"; auto 100%);
+    .retina-bg2("../img/newsletter-subscription/newsletter-subscription-bg1-x200@3.jpeg"; auto 100%);
+    background-position: right -10px top 0;
+
+    @media (min-width: @desktop-width) {
+      width: 260px;
+      margin: 0 auto;
+      padding: 35px 20px;
+      background-image: url("../img/newsletter-subscription/newsletter-subscription-bg2-x200.jpeg");
+      .retina-bg("../img/newsletter-subscription/newsletter-subscription-bg2-x200@2.jpeg"; auto 100%);
+      .retina-bg2("../img/newsletter-subscription/newsletter-subscription-bg2-x200@3.jpeg"; auto 100%);
+      background-position: right -95px top 0;
+    }
+  }
+
+  &__wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: fade(#bbdaeb, 40%);
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__text {
+    width: 160px;
+    margin: 0 0 15px 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 90%;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 150px;
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    width: 65%;
+    max-width: 250px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+    padding-right: 30px;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      margin: 0 30px 0 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    @media (max-width: @tablet-width - 1), (min-width: @desktop-width) {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 25px;
+      padding: 3px;
+      margin: 0;
+      font-size: 0;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-image: url("../img/newsletter-subscription/mail.svg");
+      background-size: auto 70%;
+      background-position: center;
+    }
+
+    @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+      min-width: 160px;
+      margin-left: 0;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__btn:hover,
+  &__btn:focus,
+  &__btn:active {
+    @media (max-width: @tablet-width - 1), (min-width: @desktop-width) {
+      background-color: transparent;
+    }
+  }
+}

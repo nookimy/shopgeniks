@@ -1,0 +1,121 @@
+.feedback {
+  box-sizing: border-box;
+
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 0 auto 15px;
+    padding: 7px 9px;
+    font-size: 12px;
+    background-color: @light;
+    border: 1px solid transparent;
+    transition: @transition;
+
+    @media (min-width: @tablet-width) {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+  }
+
+  &__input:hover,
+  &__input:focus {
+    border: 1px solid @company-color2;
+  }
+
+  &__input--consultation {
+    width: 100%;
+    margin: unset;
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      width: 48%;
+    }
+  }
+
+  &__input:active::placeholder,
+  &__input:focus::placeholder {
+    color: transparent;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    .center-margin();
+    padding: 7px;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    background-color: transparent;
+    min-height: 90px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__heading2 {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: @company-color;
+  }
+
+  &__input-tel {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #bbbbbb;
+  }
+
+  &__error {
+    .normal-font(15px; 1.25; 300);
+    color: @error;
+    margin-bottom: 15px;
+  }
+
+  &__message {
+    .normal-font(15px; 1.25; 300);
+    color: @error;
+    margin-bottom: 15px;
+  }
+
+  &__result {
+    display: none;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 87, 0, 0.51);
+    background: #5da33314;
+    color: green;
+  }
+
+  &__privacy {
+    margin: 0;
+    padding: 0;
+    .normal-font(12px; 1.25; 400);
+    color: @dark;
+  }
+
+  &__privacy-link {
+    color: @company-color2;
+    text-decoration: none;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 48%;
+      margin-left: 0;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 240px;
+    }
+  }
+
+  &__btn--call {
+    width: 100%;
+  }
+}
