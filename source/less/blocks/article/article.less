@@ -21,7 +21,6 @@
         "text share"
         "text similar"
         "buttons similar"
-        ". similar"
         "products products";
         margin-bottom: 80px;
     } 
@@ -59,6 +58,7 @@
 
     &__text {
         grid-area: text;
+        overflow: hidden;
 
         & h2 {
             color: @dark;
@@ -249,14 +249,33 @@
         }
 
         & .articles__list {
+            width: 100%;
             .list();
             display: flex;
             flex-direction: column;
             gap: 30px;
             margin-top: 20px;
+
+            @media (min-width: @tablet-width) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            @media (min-width: @desktop-width) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
         }
 
         & .articles__item {
+            @media (min-width: @tablet-width) {
+                width: 25%;
+                flex-grow: 1;
+            }
+
+            @media (min-width: @desktop-width) {
+                width: 100%;
+            }
             & .article__img {
                 display: block;
                 margin: 0;
