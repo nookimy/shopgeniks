@@ -24,24 +24,34 @@
     padding: 4px 1px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid @border-blue;
+    border-bottom: 1px solid #ffffff;
     transition: @transition;
 
     @media (min-width: @desktop-width) {
       padding: 5px 1px;
-      border-bottom: 1px solid @border-grey;
+      border-bottom: 1px solid #5a5a59;
     }
   }
 
-  &__label,
-  &__input::placeholder {
-    color: @border-blue;
+  &__label {
+    color: #ffffff;
     .normal-font(14px);
     transition: @transition;
 
     @media (min-width: @desktop-width) {
       font-size: 16px;
-      color: @border-grey;
+      color: #5a5a59;
+    }
+  }
+
+  &__input::placeholder {
+    color: #ffffff;
+    .normal-font(14px);
+    transition: @transition;
+
+    @media (min-width: @desktop-width) {
+      font-size: 16px;
+      color: #5a5a59;
     }
   }
 
@@ -97,7 +107,7 @@
       top: calc(~"50% - 16px");
       width: 14px;
       height: 14px;
-      fill: @border-grey;
+      fill: #5a5a59;
     }
   }
 

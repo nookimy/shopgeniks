@@ -3,7 +3,7 @@
   align-content: flex-start;
   flex-wrap: wrap;
   top: 25px;
-  width: 160px;
+  width: 125px;
   z-index: 3;
 
   @media (min-width: @tablet-width) {
@@ -17,7 +17,7 @@
   &--opened {
     @media (max-width: @desktop-width - 1) {
       position: absolute;
-      top: calc(25px + 25px + 11px);
+      top: calc(25px + 75px + 11px);
       left: 0;
       width: 100vw;
       padding-bottom: 30px;
@@ -93,22 +93,60 @@
   //--menu button "hamburger"
 
   &__logo-img {
-    width: 144px;
-    height: 25px;
-    margin-bottom: 18px;
+    width: 125px;
     order: -1;
     fill: @company-color2;
 
     @media (min-width: @tablet-width) {
-      position: absolute;
-      left: calc(~"50% - 115px");
-      width: 230px;
-      height: 40px;
+      width: 146px;
       margin-bottom: 0;
       order: unset;
     }
 
     @media (min-width: @desktop-width) {
+      margin-right: 20px;
+    }
+  }
+
+  &__logo-slogan {
+    display: none;
+  }
+  @media (min-width: 1170px) {
+    &__logo-slogan {
+      display: block;
+      margin: 0;
+      padding: 27px 0;
+      width: 150px;
+      color: black;
+      text-align: center;
+      font-style: italic;
+      background-image: url(../img/header/slogan-back2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 750px) {
+    &__logo-link {
+      position: absolute;
+      left: calc(50% - 71px);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-decoration: none;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 1170px) {
+    &__logo-link {
+      left: calc(50% - 158px);
       top: -3px;
     }
   }
@@ -160,6 +198,8 @@
   &--opened &__cart-icon {
     @media (max-width: @desktop-width - 1) {
       fill: @light;
+      margin-top: 0;
+      margin-right: 0;
     }
   }
 
@@ -197,9 +237,38 @@
   }
 
   &__cart {
+    position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 15px;
+
     @media (min-width: @desktop-width) {
       display: block;
-      float: left;
+    float: left;
+      position: relative;
+    right: 0;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    margin-right: 0;
+    }
+  }
+
+  &--opened .main-navigation__cart {
+    position: relative;
+    right: -27px;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  & .mini-cart.main-navigation__mini-cart {
+    min-width: 33px;
+  }
+  @media (min-width: 1170px) {
+    & .mini-cart.main-navigation__mini-cart {
+      min-width: 90px;
     }
   }
 

@@ -1,0 +1,38 @@
+.rating-area {
+    width: 120px;
+    margin: 1 auto;
+  }
+  .rating-area:not(:checked) > input {
+    display: none;
+  }
+  .rating-area:not(:checked) > label {
+    z-index: 1;
+    float: right;
+    padding: 0;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    color: lightgrey;
+  }
+  .rating-area:not(:checked) > label:before {
+    content: "★";
+    width: 16px;
+    height: 16px;
+  }
+  .rating-area > input:checked ~ label {
+    color: #ee334f;
+  }
+  .rating-area:not(:checked) > label:hover,
+  .rating-area:not(:checked) > label:hover ~ label {
+    color: #ee334f;
+  }
+  .rating-area > input:checked + label:hover,
+  .rating-area > input:checked + label:hover ~ label,
+  .rating-area > input:checked ~ label:hover,
+  .rating-area > input:checked ~ label:hover ~ label,
+  .rating-area > label:hover ~ input:checked ~ label {
+    color: #ee334f;
+  }
+  .rate-area > label:active {
+    position: relative;
+  }

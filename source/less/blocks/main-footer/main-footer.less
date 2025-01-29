@@ -86,6 +86,12 @@
     }
   }
 
+  &__time-to-call {
+    font-size: 10px;
+    color: #0086ce;
+    display: block;
+  }
+
   &__tel-logo {
     display: none;
 
@@ -152,6 +158,23 @@
       width: 260px;
       font-size: 14px;
     }
+  }
+
+  &__btn--link-price {
+    max-width: 205px;
+    text-transform: none;
+    padding: 14px 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+  &__btn--link-price::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/main-footer/download.svg") no-repeat center;
+    background-size: contain;
   }
 
   &__btn:hover,

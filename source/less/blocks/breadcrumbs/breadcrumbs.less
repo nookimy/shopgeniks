@@ -10,7 +10,11 @@
   }
 
   &__list {
-    display: flex;
+    display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
     width: @mobile-content-width-a;
     .list();
     margin: 0 auto 0 0;
