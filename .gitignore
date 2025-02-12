@@ -6,7 +6,6 @@
 *.psd
 *.sublime*
 custom/
-dev/
 faviconData.json
 gulp-config.json
 gulp-config-dev.json
