@@ -75,7 +75,8 @@
 
     @media (min-width: @desktop-width) {
       width: 460px;
-      height: 600px;
+      height: auto;
+      /*height: 600px;*/
     }
   }
 
@@ -100,7 +101,7 @@
 
   & .slider__item-wrap {
     position: relative;
-    width: 100%;
+    width: @mobile-content-width;
     aspect-ratio: 4 / 6;
 
     @media (min-width: @tablet-width) {
@@ -109,6 +110,7 @@
 
     @media (min-width: @desktop-width) {
       width: 460px;
+      height: auto;
     }
 
     & .product__img {
