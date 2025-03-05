@@ -3991,13 +3991,13 @@ img {
     position: absolute;
     top: 0;
     height: 380px;
+    aspect-ratio: unset;
   }
 }
 @media (min-width: 1170px) {
   .product__img-container {
     width: 460px;
-    height: auto;
-    /*height: 600px;*/
+    height: 600px;
   }
 }
 .product .slider__list {
@@ -4032,7 +4032,7 @@ img {
 @media (min-width: 1170px) {
   .product .slider__item-wrap {
     width: 460px;
-    height: auto;
+    height: 600px;
   }
 }
 .product .slider__item-wrap .product__img {
@@ -4041,8 +4041,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center top;
      object-position: center top;
 }
