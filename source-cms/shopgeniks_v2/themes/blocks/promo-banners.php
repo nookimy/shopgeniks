@@ -28,8 +28,5 @@ include $path.'/includes/404.php';
                 <p class="promo-banners__text">Каталог средств</p>
             </a>
         </li>
-        <li class="promo-banners__item promo-banners__item--sets">
-            <a class="promo-banners__link" href="/nabory/">Готовые наборы</a>
-        </li>
     </ul>
 </section>

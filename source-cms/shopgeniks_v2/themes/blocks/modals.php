@@ -26,7 +26,7 @@ include $path.'/includes/404.php';
 <section class="modal modal--fixed js-request--call" data-opened="modal--opened" data-overlay="modal-overlay">
     <!--modal--opened для открытого состояния-->
     <button class="modal__close-btn js-request-call-btn--close" data-target="js-request--call" data-act="close" data-overlay="modal-overlay" type="button" title="Закрыть">
-        <span class="visually-hidden">Закрыть окно заказа обратного звонка</span>
+        <noindex><span class="visually-hidden">Закрыть окно заказа обратного звонка</span></noindex>
         <svg class="modal__cross-icon" width="23" height="23">
             <use xlink:href="#icon-cross"/>
         </svg>
@@ -38,7 +38,7 @@ include $path.'/includes/404.php';
 <section class="modal modal--fixed js-login">
     <!--modal--opened для открытого состояния-->
     <button class="modal__close-btn js-login--close" type="button">
-        <span class="visually-hidden">Закрыть окно входа на сайт</span>
+        <noindex><span class="visually-hidden">Закрыть окно входа на сайт</span></noindex>
         <svg class="modal__cross-icon" width="23" height="23">
             <use xlink:href="#icon-cross"/>
         </svg>
@@ -52,22 +52,22 @@ include $path.'/includes/404.php';
 <section class="modal modal--fixed added-to-cart js-added-to-cart">
     <!--modal--opened для открытого состояния-->
     <button class="modal__close-btn js-added-to-cart--close" type="button">
-        <span class="visually-hidden">Закрыть окно</span>
+        <noindex><span class="visually-hidden">Закрыть окно</span></noindex>
         <svg class="modal__cross-icon" width="23" height="23">
             <use xlink:href="#icon-cross"/>
         </svg>
     </button>
-    <h3 class="visually-hidden">Товар добавлен в корзину!</h3>
+    <noindex><p class="visually-hidden">Товар добавлен в корзину!</p></noindex>
     <div class="added-to-cart__content">
-        <h2 class="added-to-cart__title"><?php echo $this->diafan->_('Товар добавлен в корзину');?></h2>
+        <p class="added-to-cart__title"><?php echo $this->diafan->_('Товар добавлен в корзину');?></p>
         <a class="btn added-to-cart__btn" href="<?php echo BASE_PATH_HREF.$this->diafan->_route->module("cart");?>">Перейти в корзину</a>
         <a class="btn btn--empty added-to-cart__btn js-added-to-cart--close">Продолжить покупки</a>
     </div>
 </section>
 
-<!-- Всплывающее окно с сголашением -->
+<!-- Всплывающее окно с сголашением 
 <section class="modal modal--fixed privacy-police modal--size-large js-modal js-privacy">
-    <h3 class="visually-hidden">Согласие на обработку персональных данных</h3>
+    <noindex><p class="visually-hidden">Согласие на обработку персональных данных</p></noindex>
     <button class="cross modal__close-btn js-modal__close-btn js-privacy--close" type="button">Закрыть</button>
     <div class="privacy-police__content">
         <p>Пользователь, оставляя заявку, принимает настоящее Согласие на обработку персональных данных (далее &ndash; Согласие). Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, Пользователь дает свое согласие на обработку своих персональных данных со следующими условиями:</p>
@@ -84,6 +84,6 @@ include $path.'/includes/404.php';
             <li>Настоящее согласие действует все время до момента прекращения обработки персональных данных, указанных в п.7 и п.8 данного Согласия.</li>
         </ol>
     </div>
-</section>
+</section>-->
 
 <div class="modal-overlay" data-opened="modal-overlay--opened" data-opened-animation="animation" data-opened-time="700"></div>

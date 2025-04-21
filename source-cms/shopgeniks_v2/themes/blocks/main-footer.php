@@ -45,12 +45,12 @@ include $path.'/includes/404.php';
         <div class="main-footer__contacts">
             <insert name="show_block" module="site" id="2">
         </div>
-        <p class="main-footer__description">
-            Интернет-магазин дезинфицирующих профессиональных чистящих средств фирмы «Геникс»
-        </p>
+       <div class="main-footer__description">
+          <p>Интернет-магазин дезинфицирующих профессиональных чистящих средств фирмы «Геникс»</p>
+        </div>
         <div class="main-footer__wrapper2">
             <p class="main-footer__owner-copyright">
-                © 2016 - 2019 гг.
+                © 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script> гг.
             </p>
             <p class="main-footer__btn btn">Заказы принимаются по всей России</p>
         </div>

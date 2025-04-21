@@ -22,7 +22,7 @@ include $path.'/includes/404.php';
 }
 ?>
 <section class="categories">
-    <h2 class="visually-hidden">Категории товаров</h2>
+  <h2 class="visually-hidden">Категории товаров</h2>
     <div class="categories__list-wrapper">
         <insert name="show_block" module="menu" id="2" template="categories">
     </div>

@@ -24,10 +24,10 @@ if(! defined("DIAFAN"))
 <head>
     <insert name="show_block" module="tagmanager" position="head_start">
     <insert name="show_head">
-    <insert name="show_css" files="style.css">
+    <insert name="show_css" files="style.css, slick.css, slick-theme.css, slick.min.css">
     <insert name="show_block" module="tagmanager" position="head_end">
 </head>
-<body class="page">
+<body class="page product">
     <insert name="show_block" module="tagmanager" position="body_start">
     <insert name="show_include" file="sprites">
     <insert name="show_include" file="main-header">
@@ -57,10 +57,14 @@ if(! defined("DIAFAN"))
     <insert name="show_include" file="counters">
     <insert name="show_block" module="tagmanager" position="body_end">
     <insert name="show_include" file="ym_counter">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <insert name="show_js">
     <script src="<insert name="custom" path="js/js-menu.js" absolute="true" compress="js">"></script>
     <script src="<insert name="custom" path="js/js-modal.js" absolute="true" compress="js">"></script>
     <script src="<insert name="custom" path="js/js-tab.js" absolute="true" compress="js">"></script>
     <script src="<insert name="custom" path="js/js-to-top.js" absolute="true" compress="js">"></script>
+    <script src="<insert name="custom" path="js/slick.min.js" absolute="true" compress="js">"></script>
+    <script src="<insert name="custom" path="js/slick-set.js" absolute="true" compress="js">"></script>
+    <insert name="show_block" module="tagmanager" position="body_end2">
 </body>
 </html>

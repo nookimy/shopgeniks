@@ -54,5 +54,8 @@ if(! defined("DIAFAN"))
     <script src="<insert name="custom" path="js/js-menu.js" absolute="true" compress="js">"></script>
     <script src="<insert name="custom" path="js/js-modal.js" absolute="true" compress="js">"></script>
     <script src="<insert name="custom" path="js/js-to-top.js" absolute="true" compress="js">"></script>
+    <script src="<insert name="custom" path="js/readmore.js" absolute="true" compress="js">"></script>
+    <script src="<insert name="custom" path="js/js-readmore.js" absolute="true" compress="js">"></script>
+    <insert name="show_block" module="tagmanager" position="body_end2">
 </body>
 </html>
