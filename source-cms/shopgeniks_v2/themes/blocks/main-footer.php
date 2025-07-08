@@ -47,6 +47,10 @@ include $path.'/includes/404.php';
         </div>
        <div class="main-footer__description">
           <p>Интернет-магазин дезинфицирующих профессиональных чистящих средств фирмы «Геникс»</p>
+          <p><a href="/userfiles/privacy.pdf" target="_blank" style="
+    color: #0086ce;
+    text-decoration: none;
+">Политика обработки персональных данных</a></p>
         </div>
         <div class="main-footer__wrapper2">
             <p class="main-footer__owner-copyright">

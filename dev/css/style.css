@@ -4723,6 +4723,17 @@ img {
 .cart__discount {
   width: 90.62%;
   margin: 0 auto;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 @media (min-width: 750px) {
   .cart__discount {
@@ -7011,4 +7022,69 @@ img {
 .page-article .article__info-item .icon--like {
   fill: none;
   stroke: #5A5A59;
+}
+.checkbox-privacy {
+  position: relative;
+  padding-left: 26px;
+}
+.checkbox-privacy input[type="checkbox"]::before {
+  background-image: url("../img/privacy/check-empty.svg");
+}
+.checkbox-privacy input[type="checkbox"]:checked::before {
+  background-image: url("../img/privacy/check.svg");
+}
+.checkbox-privacy input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.checkbox-privacy input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.checkbox-privacy label {
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  position: relative;
+}
+@media (min-width: 750px) {
+  .checkbox-privacy label {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+  }
+}
+@media (min-width: 1170px) {
+  .checkbox-privacy label {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+  }
+}
+.checkbox-privacy label a {
+  color: unset;
+  text-decoration: underline;
+}
+.checkbox-privacy label a:hover,
+.checkbox-privacy label a:focus {
+  color: #0086ce;
 }

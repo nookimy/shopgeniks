@@ -1,0 +1,60 @@
+.checkbox-privacy {
+    position: relative;
+    padding-left: 26px;
+    
+    & input[type="checkbox"]::before {
+        background-image: url("../img/privacy/check-empty.svg");
+    }
+
+    & input[type="checkbox"]:checked::before {
+        background-image: url("../img/privacy/check.svg"); 
+    }
+    
+    & input[type="checkbox"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    & input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: -26px;
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;           
+    }
+
+    & label {
+        .normal-font();
+        position: relative;
+
+        @media (min-width: @tablet-width) {
+            .normal-font(14px);
+          }
+        
+          @media (min-width: @desktop-width) {
+            .normal-font(16px);
+          }
+
+        & a {
+            color: unset;
+            text-decoration: underline;
+
+            &:hover,
+            &:focus {
+                color: #0086ce;
+            }
+        }
+
+        
+    }    
+}
