@@ -84,6 +84,11 @@
     margin: 0;
     padding: 0;
 
+    @media (max-width: 749px) {
+      width: 30%;
+      flex-grow: 1;
+    }
+
     @media (min-width: @tablet-width) {
       align-self: flex-start;
       width: 100%;
@@ -93,6 +98,13 @@
 
   &__img {
     display: block;
+
+    @media (max-width: 749px) {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-position: center;
+      object-fit: contain;
+    }
 
     @media (min-width: @tablet-width) {
       max-width: 220px;
